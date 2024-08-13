@@ -1,0 +1,109 @@
+@media screen and (max-width: 992px) {
+  .nav-bar_name,
+  .personal-img {
+    display: none;
+  }
+
+  /* .grid .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 60px;
+  } */
+  .cer2 {
+    position: relative;
+  }
+  .cer2::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    height: 300px;
+    width: 2px;
+    background-color: rgb(241, 175, 32);
+  }
+  .grid .personal {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: auto;
+    height: max-content;
+  }
+
+  .grid .personal {
+    grid-template-areas:
+      "header1 header2"
+      "main1 main2"
+      "footer1 footer2";
+    gap: 15px;
+  }
+
+  #experience {
+    grid-area: header1;
+  }
+  #activity {
+    grid-area: header1;
+  }
+  #education {
+    grid-area: main2;
+  }
+  #skill {
+    grid-area: main1;
+  }
+  #hobby {
+    grid-area: footer2;
+  }
+  #language {
+    grid-area: footer1;
+  }
+  #skill,
+  #language,
+  #experience,
+  #activity,
+  #hobby,
+  #education {
+    margin: 0;
+    height: fit-content;
+  }
+  .section-title {
+    margin-left: 20px;
+  }
+
+  /* Chứng chỉ - Giải thưởng */
+  .grid .certificate {
+    grid-template-columns: 0.5fr 0.5fr;
+    height: max-content;
+    width: max-content;
+    padding-left: 20px;
+  }
+  .cer1 img,
+  .cer2 img,
+  .cer3 img {
+    width: 400px;
+    height: 200px;
+    border-left: 0;
+  }
+  .cer2 img {
+    padding-left: 0;
+  }
+  .cer1,
+  .cer2,
+  .cer3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Dự án */
+  .self {
+    position: relative;
+    grid-template-columns: 0.3fr 1fr;
+    align-items: center;
+    top: 5px;
+  }
+  .self > p {
+    margin: 0px;
+  }
+  .project-title {
+    font-size: medium;
+  }
+  .icon-lamp {
+    grid-area: 2 / 2;
+  }
+}
